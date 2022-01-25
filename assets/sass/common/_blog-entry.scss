@@ -1,0 +1,68 @@
+/* === Blog Entry === */
+
+.blog-entry{
+    padding-bottom: 88px;
+    border-bottom: 1px solid #bfbfbf;
+    margin-bottom: 66px;
+}
+.blog-entry-header{
+    @extend .page-header;
+}
+.blog-entry-header,
+.blog-entry-meta,
+.blog-entry-contents,
+.blog-entry-credits{
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-entry-date{
+    margin-bottom: 24px;
+}
+.blog-entry-meta{
+    text-align: center;
+    margin-bottom: 54px;
+}
+.blog-entry-terms{
+    @extend .loop-item-terms;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.blog-entry-image{
+    padding-bottom: 39.81%;
+    height: 0;
+    position: relative;
+    margin-bottom: 100px;
+    img{
+        @extend %cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.blog-entry-contents{
+    margin-bottom: 74px;
+    p, .wp-block-image, ul, ol{
+        margin-bottom: 2.3em;
+    }
+    ol{
+        list-style: decimal inside;
+    }
+    ul{
+        list-style: disc inside;
+    }
+    li{
+        padding-left: 2em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 2.3rem;
+    }
+}
+
+/* Related Posts */
+.related-posts{
+    margin-bottom: 60px;
+}
+.related-posts-header{
+    margin-bottom: 80px;
+}

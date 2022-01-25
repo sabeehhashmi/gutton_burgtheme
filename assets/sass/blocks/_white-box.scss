@@ -1,0 +1,20 @@
+/* === White Box === */
+
+.white-box{
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 60px 30px 47px;
+    background-color: #fff;
+    br{
+        content: " " !important;
+        display: block !important;
+        margin-bottom: 0.5em !important;
+    }
+}
+.white-box-inner{
+    max-width: 675px;
+    margin: 0 auto;
+    body & > *:last-child{
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,22 @@
+.group-top-150 {
+  position: relative;
+  top: 150px;
+}
+.bg-info-details {
+  position: relative;
+}
+.list-img {
+  position: relative;
+  top: 0;
+  right: 0;
+  @media (min-width:768px) {
+    position: absolute;
+    top: -40%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+

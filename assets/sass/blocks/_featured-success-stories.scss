@@ -1,0 +1,189 @@
+/* === Featured Success Stories === */
+
+.featured-success-stories-heading,
+.featured-success-stories-footer,
+.success-story-item-body,
+.success-story-item-image{
+    display: none;
+}
+.featured-success-stories{
+    background-color: #fff;
+    padding: 158px 0 115px;
+    &.bg-none{
+        background: none;
+        padding: 0;
+        .featured-success-stories-inner{
+            padding: 75px 0;
+            border-bottom: 1px solid #c9c9c9;
+        }
+    }
+}
+.featured-success-stories-inner{
+    @extend .container;
+    overflow: hidden;
+}
+.success-story-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -29px -58px;
+}
+.success-story-item{
+    flex: 0 33.3333%;
+    width: 33.3333%;
+    padding: 0 29px;
+    margin-bottom: 58px;
+    &.active, &:hover, &:focus{
+        .success-story-item-heading{
+            opacity: 1;
+        }
+    }
+}
+.success-story-item-heading{
+    opacity: 0.6;
+    border-top: 1px solid $color_secondary;
+    @extend %transitions;
+    cursor: pointer;
+    
+}
+.success-story-item-headline{
+    font-weight: 500;
+    font-family: $font_secondary;
+    line-height: 1.31;
+    color: #757D82;
+    opacity: 0.6;
+    padding: 0.88em 0;
+}
+.success-story-item-title{
+    font: 500 1.19rem/1.47 $font_secondary;
+    color: #252839;
+}
+.featured-success-story{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+}
+.featured-success-story-side{
+    flex: 0 50.7%;
+    width: 50.7%;
+}
+.featured-success-story-image{
+    display: block;
+    height: 0;
+    padding-bottom: 83.67%;
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    overflow: hidden;
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        @extend %cover;
+    }
+}
+a.featured-success-story-image img{
+    @extend %transitions;
+    &:hover, &:focus{
+        transform: scale(1.1);
+    }
+}
+.featured-success-story-main{
+    flex: 1;
+    padding-left: 66px;
+}
+.featured-success-story-main-heading{
+    padding-bottom: 73px;
+    position: relative;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 16px;
+        bottom: 31px;
+        height: 26px;
+        width: 2px;
+        background-color: #D0B768;
+    }
+    &:after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+.featured-success-stories-title{
+    float: left;
+    font: 700 1rem/1.44 $font_primary;
+    color: $color_secondary;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+}
+.featured-success-stories-archive-link{
+    float: right;
+    @extend .blue-arrow-link;
+}
+.featured-success-story-title{
+    font: 300 2.56rem/1.34 $font_secondary;
+    letter-spacing: -0.82px;
+    color: #252839;
+    margin-bottom: 0.5em;
+}
+.featured-success-story-link{
+    font-weight: 700;
+    letter-spacing: 0.16px;
+    color: inherit;
+    text-decoration: none;
+}
+.featured-success-stories-slider{
+    height: 1px;
+    overflow: hidden;
+    visibility: hidden;
+    
+    .success-story-items{
+        display: block;
+        margin: 0;
+    }
+    .success-story-item{
+        padding: 0;
+    }
+    .success-story-item-inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .success-story-item-side{
+        flex: 0 45%;
+        width: 45%;
+    }
+    .success-story-item-main{
+        flex: 1;
+        padding-left: 40px;
+    }
+    .success-story-item-body{
+        display: block;
+    }
+    .success-story-item-image{
+        position: relative;
+        padding-bottom: 83.71%;
+        height: 0;
+        border-radius: 4px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            @extend %cover;
+        }
+    }
+    .success-story-item-headline{
+        display: none;
+    }
+    .success-story-item-heading{
+        border: 0;
+    }
+    .success-story-item-title{
+        font: 300 1.93rem/1.34 $font_secondary;
+        margin-bottom: 0.83em;
+    }
+    .success-story-item-link{
+        @extend .featured-success-story-link;
+    }
+}

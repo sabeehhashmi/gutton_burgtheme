@@ -1,0 +1,32 @@
+%cover{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+%transitions{
+    transition: all 0.3s ease-in-out;
+}
+%after, %before{
+    display: block;
+    content: '';
+}
+%no_text{
+    font-size: 0;
+    line-height: 0;
+}
+%flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+%responsive_image{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+%link_inherit{
+    a{
+        color: inherit;
+        text-decoration: inherit;
+    }
+}

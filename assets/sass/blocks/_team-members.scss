@@ -1,0 +1,36 @@
+/* === Team Members === */
+.team-members{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.team-members-header{
+    margin-bottom: 51px;
+}
+.team-members-inner{
+    @extend .container;
+    overflow: hidden;
+}
+.team-members-header{
+    text-align: center;
+}
+.team-member-items{
+    @extend %flex;
+    justify-content: center;
+    margin: 0 -20px;
+    .team-members.layout-2-cols &{
+        margin: 0 -15px;
+    }
+}
+.team-member-item{
+    flex: 0 33.3333%;
+    width: 33.3333%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    .team-members.layout-2-cols &{
+        flex: 0 50%;
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        max-width: 440px;
+    }
+}

@@ -1,0 +1,35 @@
+/* === WP gallery === */
+
+.wp-block-gallery{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.blocks-gallery-grid{
+    @extend %flex;
+    list-style: none;
+    width: auto;
+    margin: 0 -15px;
+    margin-bottom: -30px !important;
+    .blocks-gallery-item{
+        flex: 1;
+        min-width: 33.3333%;
+        padding: 0 15px;
+        margin: 0 0 30px;
+        figure{
+            display: block;
+            height: 274px;
+            position: relative;
+            img{
+                @extend %cover;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+}
+.blocks-gallery-caption{
+    display: none;
+}

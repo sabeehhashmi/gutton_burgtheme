@@ -1,0 +1,28 @@
+.slider-content {
+  position: relative;
+  img {
+    width: 5rem !important;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+  }
+  a {
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    color: #000 !important;
+  }
+}
+
+.image-slide-item {
+  img {
+    object-fit: cover;
+    width: 80% !important;
+  }
+}
+

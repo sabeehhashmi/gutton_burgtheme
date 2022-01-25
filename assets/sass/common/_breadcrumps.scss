@@ -1,0 +1,24 @@
+/* === Breadcrumps === */
+
+.breadcrumps{
+    color: #444;
+    font-weight: 700;
+    font-size: 0.88em;
+    a{
+        color: rgba(0,0,0,0.5);
+        text-decoration: none;
+        padding-right: 15px;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        &:after{
+            @extend %after;
+            border: 3px solid transparent;
+            border-left-color: #444;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 3px);
+            border-left-width: 5px;
+        }
+    }
+}

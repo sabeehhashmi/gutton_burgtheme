@@ -1,0 +1,69 @@
+/* === Block: Hero === */
+
+.hero{
+    position: relative;
+    color: #fff;
+    min-height: calc( 100vh - 76px );
+    .admin-bar &{
+        min-height: calc( 100vh - 76px - 32px );
+    }
+}
+.hero-media{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    > *{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:after{
+        @extend %after;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: url(../img/hero-bg.svg) no-repeat center bottom;
+        background-size: cover;
+        z-index: 5;
+        opacity: 0.66;
+    }
+}
+.hero-image{
+    z-index: 1;
+    img{
+        @extend %cover;
+    }
+}
+.hero-video{
+    z-index: 2;
+    video{
+        @extend %cover;
+    }
+}
+.hero-inner{
+    @extend .container;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    position: relative;
+    z-index: 2;
+    min-height: inherit;
+    display: flex;
+    align-items: flex-end;
+}
+.hero-title{
+    font: 300 2.94rem/1.28 $font_secondary;
+    letter-spacing: -0.94px;
+}
+.hero-button{
+    @extend .arrow-button;
+    .hero-title + &{
+        margin-top: 1.44em;
+    }
+}

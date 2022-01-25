@@ -1,0 +1,86 @@
+/* === Featured Team === */
+.featured-team{
+    margin-top: 120px;
+    margin-bottom: 130px;
+    position: relative;
+}
+.featured-team-bg{
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -375px;
+    bottom: -119px;
+    overflow: hidden;
+    &:before{
+        @extend %before;
+        position: absolute;
+        top: 53px;
+        height: 100px;
+        left: -50px;
+        right: -50px;
+        background-color: #fff;
+        transform: rotate(2.6deg);
+    }
+    &:after{
+        @extend %before;
+        position: absolute;
+        bottom: 90px;
+        height: 190px;
+        left: -50px;
+        right: -50px;
+        background-color: #fff;
+        transform: rotate(-5deg);
+    }
+}
+.featured-team-bg-inner{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 180px;
+    background-color: #fff;
+}
+.featured-team-members-container-wrap{
+    overflow: hidden;
+}
+.featured-team-heading{
+    @extend .container;
+    @extend %flex;
+    position: relative;
+    z-index: 10;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.featured-team-headline{
+    @extend .headline;
+}
+.featured-team-button{
+    @extend .arrow-button-hover-white;
+}
+.featured-team-header{
+    flex: 1;
+    padding-left: 366px;
+    position: relative;
+    &:before{
+        @extend %before;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 326px;
+        height: 1px;
+        background-color: $color_secondary;
+    }
+}
+.featured-team-button-container{
+    margin-left: 30px;
+}
+.featured-team-members-container{
+    @extend .container;
+    position: relative;
+    z-index: 10;
+    .lSSlideOuter, .lSSlideWrapper, .lightSlider{
+        overflow: visible !important;
+    }
+}

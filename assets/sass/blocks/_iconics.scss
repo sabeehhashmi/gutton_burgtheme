@@ -1,0 +1,90 @@
+/* === Iconics === */
+
+.iconics{
+    margin-bottom: 110px;
+    margin-top: 130px;
+}
+.iconics-header{
+    text-align: center;
+    margin-bottom: 61px;
+}
+.iconics-headline{
+    @extend .headline;
+    padding-bottom: 40px;
+    position: relative;
+    margin-bottom: 16px;
+    &:after{
+        @extend %after;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 25px;
+        width: 1px;
+        margin-left: -1px;
+        background-color: $color_secondary;
+    }
+}
+.iconics-items{
+    margin: 0 -20px -22px;
+    @extend %flex;
+}
+.iconics-item{
+    flex: 0 33.3333%;
+    width: 33.3333%;
+    padding: 0 20px;
+    margin-bottom: 22px;
+}
+.iconic{
+    border: 1px solid #D0B768;
+    border-radius: 5px;
+    padding: 29px 24px;
+    min-height: 100%;
+}
+.iconic-icon{
+    height: 42px;
+    max-width: 100%;
+    width: auto;
+    background: no-repeat left center;
+    background-size: contain;
+    margin-bottom: 19px;
+}
+.iconic-title{
+    font: 500 1.25em/1.3 $font_secondary;
+    color: $color_secondary;
+    margin-bottom: 0.5em;
+}
+.iconic-content{
+    > p:last-child{
+        margin-bottom: 0;
+    }
+}
+
+/* White Boxed */
+.iconics.style-white-boxed{
+    .iconic{
+        background-color: #fff;
+        box-shadow: 0px 3px 46px rgba(0,0,0,0.16);
+        border-radius: 10px;
+        border: 0;
+        padding: 67px 25px 28px;
+    }
+    .iconic-title{
+        color: $color_main;
+    }
+    .iconic-icon{
+        margin-bottom: 14px;
+    }
+    .iconic-content{
+        font-size: 0.88em;
+        line-height: 1.5;
+    }
+    .iconics-items{
+        margin-left: -12.5px;
+        margin-right: -12.5px;
+    }
+    .iconics-item{
+        padding-left: 12.5px;
+        padding-right: 12.5px;
+        margin-bottom: 25px;
+    }
+}

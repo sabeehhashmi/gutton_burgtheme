@@ -1,0 +1,53 @@
+/* === Report === */
+
+.report{
+    background-color: $color_main;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    padding: 46px 77px 55px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    &:after{
+        @extend %after;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -32px;
+        height: 50px;
+        width: calc(100% + 50px);
+        background-color: #D0B768;
+        z-index: 10;
+        transform: rotate(-1deg);
+    }
+}
+.report-image{
+    width: 214px;
+    flex: 0 214px;
+    margin-right: 74px;
+    @extend %no_text;
+    img{
+        max-width: 100%;
+        height: auto;
+        width: auto;
+    }
+}
+.report-contents{
+    flex: 1;
+    padding-top: 44px;
+}
+.report-title{
+    @extend h2;
+    color: inherit;
+    margin-bottom: 0.41em;
+    letter-spacing: -1px;
+}
+.report-content{
+    font-size: 1.19em;
+    margin-bottom: 2em;
+    margin-right: 40px;
+}
+.report-download-button{
+    @extend .button;
+}

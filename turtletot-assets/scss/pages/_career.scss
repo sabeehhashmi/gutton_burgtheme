@@ -1,0 +1,31 @@
+.simple-card-wrapper {
+ 
+}
+ 
+.career-card-bg {
+  background-image: url("../images/career-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  background-position: center top;
+  position: relative;
+  z-index: 2;
+}
+
+.small-card {
+  h2 {
+    font-family: 'Quicksand', sans-serif;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+  a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+  }
+}
+

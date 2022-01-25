@@ -1,0 +1,93 @@
+/* === Angled Hero === */
+
+.angled-hero{
+    margin: 12px 12px 50px;
+    background-color: $color_main;
+    position: relative;
+    padding-bottom: 89px;
+    overflow: hidden;
+    color: #fff;
+    &:after{
+        @extend %after;
+        position: absolute;
+        bottom: -43px;
+        left: -50px;
+        right: -50px;
+        height: 89px;
+        background-color: #f4f4f4;
+        transform: rotate(2.6deg);
+        z-index: 10;
+    }
+    &.style-angled:before{
+        @extend %before;
+        position: absolute;
+        bottom: -43px;
+        left: 38%;
+        right: -5px;
+        top: auto;
+        height: 89px;
+        background-color: #f4f4f4;
+        transform: rotate(-1.8deg);
+        z-index: 11;
+    }
+    &.style-diagonal-reverse:after{
+        transform: rotate(-2.6deg);
+    }
+}
+.angled-hero-inner{
+    @extend .container;
+    padding-top: 128px;
+    padding-bottom: 96px;
+}
+.angled-hero-main{
+    max-width: 385px;
+    position: relative;
+    z-index: 15;
+}
+.angled-hero-image{
+    width: calc((100% - 1105px) / 2 + 705px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: no-repeat center center;
+    background-size: cover;
+}
+.angled-hero-angle{
+    position: absolute;
+    left: -99px;
+    top: -75px;
+    bottom: 0;
+    background-color: $color_main;
+    z-index: 5;
+    width: 245px;
+    transform: rotate(20deg);
+    overflow: hidden;
+    &:after{
+        @extend %after;
+        position: absolute;
+        right: -8px;
+        top: 0;
+        bottom: 0;
+        background-color: $color_secondary;
+        z-index: 5;
+        width: 20px;
+        transform: rotate(2deg);
+    }
+}
+.angled-hero-headline{
+    @extend .headline;
+    margin-bottom: 0;
+}
+.angled-hero-title{
+    margin-bottom: 0.53em;
+}
+.angled-hero-content{
+    > p:last-child{
+        margin-bottom: 0;
+    }
+}
+.angled-hero-button{
+    @extend .arrow-button;
+    margin-top: 2rem;
+}

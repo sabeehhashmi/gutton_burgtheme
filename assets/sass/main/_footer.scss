@@ -1,0 +1,201 @@
+/* === Footer === */
+
+.footer{
+    padding: 70px 0 20px;
+    margin-top: 45px;
+    background-color: $color_main;
+    color: #fff;
+    font-size: 0.75em;
+    letter-spacing: 0.12px;
+    font-weight: 300;
+    h2{
+        color: $color_secondary;
+        font-weight: 500;
+        font-size: 1.33em;
+        letter-spacing: -0.32px;
+        margin-bottom: 0.81em;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        &:hover, &:focus{
+            color: $color_secondary;
+        }
+    }
+}
+.footer-inner{
+    @extend .container;
+}
+
+/* = Primary Section = */
+.footer-primary-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+/* Footer Logo */
+.footer-logo{
+    flex: 0 160px;
+    width: 160px;
+    padding: 0 0 35px 37px;
+    max-height: 97px;
+    position: relative;
+    img{
+        max-height: 62px;
+        width: auto;
+        height: auto;
+    }
+    &:before{
+        @extend %before;
+        position: absolute;
+        left: 7px;
+        top: -115px;
+        bottom: 0;
+        width: 12px;
+        background-color: $color_secondary;
+        z-index: 20;
+    }
+    &:after{
+        @extend %after;
+        position: absolute;
+        left: 0px;
+        top: -115px;
+        width: 8px;
+        height: 10px;
+        background-color: $color_secondary;
+        z-index: 20;
+    }
+}
+
+/* Footer Navigations */
+.footer-navs{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    .footer-logo + &{
+        max-width: 748px;
+    }
+}
+.footer-nav{
+    li{
+        margin-bottom: 0.95em;
+    }
+}
+
+/* = Socials = */
+.footer-socials-section{
+    overflow: hidden;
+    padding-bottom: 4px;
+}
+
+/* Social Links */
+.social-links{
+    @extend %no_text;
+    text-align: right;
+    margin: 0 -10px;
+    li{
+        display: inline-block;
+        margin: 10px;
+        vertical-align: middle;
+    }
+    a{
+        display: inline-block;
+        @extend %no_text;
+        width: 18px;
+        height: 18px;
+        background: no-repeat center center;
+        background-size: contain;
+        vertical-align: middle;
+        position: relative;
+        &:before, &:after{
+            @extend %before;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: no-repeat center center;
+            background-size: contain;
+            @extend %transitions;
+        }
+        &:before{
+            opacity: 1;
+        }
+        &:after{
+            opacity: 0;
+        }
+        &:hover, &:focus{
+            &:before{
+                opacity: 0;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+    .icon-youtube a{
+        width: 27px;
+        height: 21px;
+        &:before{
+            background-image: url(../img/icon-youtube.svg);
+        }
+        &:after{
+            background-image: url(../img/icon-youtube-yellow.svg);
+        }
+    }
+    .icon-facebook a{
+        &:before{
+            background-image: url(../img/icon-facebook.svg);
+        }
+        &:after{
+            background-image: url(../img/icon-facebook-yellow.svg);
+        }
+    }
+    .icon-twitter a{
+        &:before{
+            background-image: url(../img/icon-twitter.svg);
+        }
+        &:after{
+            background-image: url(../img/icon-twitter-yellow.svg);
+        }
+    }
+    .icon-linkedin a{
+        &:before{
+            background-image: url(../img/icon-linkedin.svg);
+        }
+        &:after{
+            background-image: url(../img/icon-linkedin-yellow.svg);
+        }
+    }
+}
+
+/* Minifooter */
+.minifooter{
+    * + &{
+        border-top: 1px solid #fff;
+    }
+    > *{
+        margin-bottom: 10px;
+    }
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* Copyright */
+.copyright{
+    display: block;
+}
+
+/* Minifooter Navigation */
+.minifooter-nav{
+    li{
+        display: inline;
+        &:not(:last-child):after{
+            content: ' |';
+            margin: 0 0.55em;
+        }
+    }
+}

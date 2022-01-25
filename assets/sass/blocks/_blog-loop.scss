@@ -1,0 +1,133 @@
+/* === Loop Blog === */
+
+.blog-loop-header{
+    @extend .container;
+    @extend .page-header;
+}
+
+/* Filters */
+.blog-loop-filters{
+    background-color: #fff;
+    margin-bottom: 77px;
+}
+.blog-loop-filters-inner{
+    @extend %flex;
+    @extend .container;
+    justify-content: space-between;
+    padding-top: 1.75em;
+    padding-bottom: 0.75em;
+    align-items: center;
+}
+.blog-loop-filter-buttons{
+    @extend %flex;
+    margin-bottom: 0.31em;
+}
+.blog-loop-filter-button{
+    border: 1px solid transparent;
+    border-radius: 3.94em;
+    padding: 0.34em 0;
+    margin: 0 2.5em 0.69em 0;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(37, 40, 57, 0.6);
+    &.active{
+        color: $color_main;
+        border-color: $color_main;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+}
+.blog-loop-filter-dropdowns{
+    @extend %flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.blog-loop-filter-dropdowns-title{
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.blog-loop-filter-dropdowns-contents{
+    @extend %flex;
+    align-items: center;
+    > *{
+        margin-left: 30px;
+    }
+}
+
+/* Blog Item */
+.blog-loop-inner{
+    @extend .container;
+}
+.blog-item{
+    @extend %flex;
+    margin-bottom: 60px;
+}
+.blog-item-media{
+    flex: 0 41.21%;
+    width: 41.41%;
+    margin-right: 50px;
+}
+.blog-item-image{
+    display: block;
+    height: 0;
+    padding-bottom: 38.6%;
+    position: relative;
+    img{
+        @extend %cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+.blog-item-main{
+    flex: 1;
+}
+.blog-item-meta{
+    @extend %flex;
+    margin-bottom: 10px;
+}
+.blog-item-terms{
+    @extend %flex;
+    color: #757D82;
+    font-weight: 500;
+    font-family: $font_secondary;
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    > *:not(:first-child):before, .sep:before{
+        content: '|';
+        margin: 0 0.5em;
+    }
+}
+.blog-item-date{
+    color: #444;
+    margin-right: 21px;
+}
+.blog-item-title{
+    @extend %link_inherit;
+    font-weight: 300;
+    font-size: 1.63em;
+    font-family: $font_secondary;
+    margin-bottom: 9px;
+}
+.blog-item-link{
+    @extend .blue-arrow-link;
+}
+.blog-item-link{
+    padding-right: 56px;
+}
+.blog-item-excerpt{
+    max-height: 2.88em;
+    overflow: hidden;
+}
+
+/* Pagination */
+.blog-loop-pagination{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.blog-loop-next-link{
+    @extend .arrow-button-hover-white;
+}

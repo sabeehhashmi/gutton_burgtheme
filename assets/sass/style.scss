@@ -1,0 +1,50 @@
+/* ### 1Group Styles ### */
+
+@import "_vars.scss";
+@import "_extends.scss";
+
+/* ===== Plugins ===== */
+@import "plugins/lightslider.scss";
+
+/* ===== Base ====== */
+@import "base/_reset.scss";
+@import "base/_remove.scss";
+@import "base/_general.scss";
+
+/* ===== Main ====== */
+@import "main/_header.scss";
+@import "main/_footer.scss";
+
+/* ===== Blocks ===== */
+@import "blocks/_hero.scss";
+@import "blocks/_partners.scss";
+@import "blocks/_services.scss";
+@import "blocks/_featured-success-stories.scss";
+@import "blocks/_featured-testimonials.scss";
+@import "blocks/_visit-cards.scss";
+@import "blocks/_callout.scss";
+@import "blocks/_video-callout.scss";
+@import "blocks/_featured-reports.scss";
+@import "blocks/_angled-hero.scss";
+@import "blocks/_content.scss";
+@import "blocks/_video.scss";
+@import "blocks/_featured-team.scss";
+@import "blocks/_iconics.scss";
+@import "blocks/_loop.scss";
+@import "blocks/_white-box.scss";
+@import "blocks/_tabs.scss";
+@import "blocks/_team-members.scss";
+@import "blocks/_wp-gallery.scss";
+
+/* ===== Common ===== */
+@import "common/_report.scss";
+@import "common/_team-member.scss";
+@import "common/_blog-entry.scss";
+@import "common/_breadcrumps.scss";
+@import "common/_success-story-entry.scss";
+
+// ===== Responsive ===== */
+@import "responsive/_large-desktop.scss";
+@import "responsive/_desktop.scss";
+@import "responsive/_tablet.scss";
+@import "responsive/_mobile.scss";

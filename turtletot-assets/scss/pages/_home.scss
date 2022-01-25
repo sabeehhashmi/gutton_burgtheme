@@ -1,0 +1,202 @@
+.hero-section {
+  height:calc(auto - 0);
+  background-size: cover;
+  @media (min-width:768px) {
+    height:calc(100vh - 111px);
+  }
+}
+
+
+.top-120{
+  position: relative;
+  top: 120px;
+}
+.p-top-200 {
+  padding-top: 200px;
+}
+
+.border-danger {
+  border: 3px solid #DF4900;
+}
+.border-primary {
+  border: 3px solid #009EE2;
+}
+.border-success {
+  border: 3px solid #47C45D;
+}
+
+
+
+.simple-cards-icon {
+ 
+  img {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
+
+.hero-content {
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+.group-cards-wrapper {
+  position: relative;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12) !important;
+}
+.group-cards-pera {
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+.group-cards-icon {
+  img {
+    height: 3.75rem;
+  }
+}
+
+.label-main {
+  position: absolute;
+  right: 1.25rem;
+  top: 0;
+  padding: 0.2rem 1rem 0.6rem 1rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  h5 {
+    font-weight: 700;
+    margin: 0;
+  }
+  p {
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
+.text-image-inner {
+  img {
+    max-width: 100%;
+  }
+}
+
+.text-wrapper {
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+.simple-cards-pera {
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+.bg-1 {
+  background-image: url("../images/bg-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.after-icon {
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/icon-message.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 8rem;
+    top: 5%;
+    right: 13%;
+    height: 9rem;
+    @media (min-width:768px) {
+      height: 9rem;
+      width: 8rem;
+    }
+  }
+}
+
+.boder-danger-img {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/border-primary.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.border-primary-img {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/border-secondry.png");
+    background-repeat: no-repeat;
+    background-size: 99% 99%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.mobile-big {
+  position: relative;
+  text-align: right;
+  &:before {
+    position: absolute;
+    content: "";
+    top: 5%;
+    background-image: url("../images/icon-blue-line-hurt.png");
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    left: 10%;
+    height: 10rem;
+    @media (min-width:768px) {
+      height: 10rem;
+      left: 0;
+      width: 5rem;
+      top: 20%;
+    }
+  }
+  img {
+    z-index: 2;
+    position: relative;
+    max-width: 100%;
+  }
+  .orange-box {
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    right: 0;
+    img {
+      max-width: 100%;
+    }
+
+  }
+}
+
+.wish-list-text {
+  text-align: center;
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+  }
+  @media (min-width:768px) {
+    text-align: left;
+  }
+}
+.bg-orange-box-after {
+  position: relative;
+  
+}
+.bg-2 {
+  background-image: url("../images/bg-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

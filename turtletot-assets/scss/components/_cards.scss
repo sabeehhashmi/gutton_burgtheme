@@ -1,0 +1,183 @@
+.big-card-text {
+  h5 {
+      font-family: 'Quicksand', sans-serif;
+  }
+  h2 {
+      font-family: 'Quicksand', sans-serif;
+  }
+  p {
+      font-family: 'Quicksand', sans-serif;
+  }
+}
+
+.danger-card-bg {
+  background-image: url("../images/bg-big-danger.png");
+  background-size: cover;
+  width: 100%;
+  min-height: 350px;
+}
+
+.primary-card-bg{
+  background-image: url("../images/bg-big-primary.png");
+  background-size: cover;
+  width: 100%;
+  min-height: 350px;
+}
+.success-card-bg {
+  background-image: url("../images/bg-big-success.png");
+  background-size: cover;
+  width: 100%;
+  min-height: 350px;
+}
+
+
+.groups-danger-text {
+  position: relative;
+  height: 140px;
+  &:before {
+    background-color: rgba(223, 73, 0, 0.6);
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+  }
+  &:after {
+    background-color: #DF4900;
+    content: "";
+    height: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+  }
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    height: 75px;
+    overflow: hidden;
+  }
+}
+.groups-primary-text {
+  position: relative;
+  height: 140px;
+  &:before {
+    background-color: rgba(0, 158, 226, 0.6);
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+  }
+  &:after {
+    background-color: #009EE2;
+    content: "";
+    height: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+  }
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    height: 75px;
+    overflow: hidden;
+  }
+}
+.groups-success-text {
+  position: relative;
+  height: 140px;
+  &:before {
+    background-color: rgba(71, 196, 93, 0.6);
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+  }
+  &:after {
+    background-color: #47C45D;
+    content: "";
+    height: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+  }
+  h3 {
+    font-family: 'Quicksand', sans-serif;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+    height: 75px;
+    overflow: hidden;
+  }
+}
+
+.group-cards-icon {
+  margin-bottom: 1rem;
+  img {
+    height: 8rem;
+    object-fit: cover;
+  }
+}
+
+
+.main-cards-bg-1 {
+  background-image: url("../images/main-cards-bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  &:after {
+    display: none;
+    @media (min-width:768px) {
+      display: block;
+      position: absolute;
+    content: "";
+    right: 1rem;
+    top: 2rem;
+    background-image: url("../images/icon-light.png");
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 8rem;
+    }
+  }
+}
+.main-cards-bg-2 {
+  background-image: url("../images/main-cards-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  &:after {
+    display: none;
+    @media (min-width:768px) {
+      position: absolute;
+      content: "";
+      right: 1rem;
+      top: 2rem;
+      background-image: url("../images/icon-search-big.png");
+      background-repeat: no-repeat;
+      height: 10rem;
+      width: 8rem;
+      display: block;
+    }
+  }
+}
+.main-cards-content {
+  h2 {
+    font-family: 'Quicksand', sans-serif;
+  }
+  p {
+    font-family: 'Quicksand', sans-serif;
+  }
+}

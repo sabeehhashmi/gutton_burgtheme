@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helvetica.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/helvetica-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Korolev';
+    src: url('../fonts/korolev-medium.woff') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.hs-input{
+    background: #FFF !important;
+    border-radius: 5px;
+    border: 0;
+    font: 16px/23px Helvetica, Arial, sans-serif;
+    color: #444444;
+    height: 42px;
+}
+textarea.hs-input{
+    min-height: 12em;
+}
+.hs-form-field{
+    margin-bottom: 22px;
+}
+.hs-form-field > label{
+    font: 700 12px/14px Helvetica, Arial, sans-serif !important;
+    color: #252839;
+    margin-bottom: 1em;
+}
+.actions{
+    padding: 0;
+    margin: 58px 0 0;
+    text-align: center !important;
+}
+.hs-button{
+    display: inline-block;
+    padding: 0.56em 3.06em 0.56em 1.06em;
+    text-align: center;
+    background-color: #D0B768 !important;
+    border: 1px solid #D0B768 !important;
+    min-width: 125px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #252839 !important;
+    text-decoration: none;
+    font: 500 16px/1 'Korolev', sans-serif !important;
+    border-radius: 3.94em;
+    box-shadow: 1px 0px 0 0px #D0B768, -1px 0px 0 0px #D0B768;
+    position: relative;
+    min-width: 0;
+}
+.hs-button:before,
+.hs-button:after{
+    display: block;
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    background: no-repeat center center;
+    background-size: contain;
+    transition: all 0.3s ease-in-out;
+}
+.hs-button:before{
+    opacity: 0;
+    background-image: url(../img/icon-right-arrow-white.svg);
+}
+.hs-button:after{
+    opacity: 1;
+    background-image: url(../img/icon-right-arrow-black.svg);
+}
+.hs-button:hover, .hs-button:focus{
+    background-color: transparent;
+    color: #fff;
+}
+.hs-button:hover .hs-button:after,
+.hs-button:focus .hs-button:after{
+    opacity: 0;
+}
+.hs-button:hover .hs-button:before,
+.hs-button:focus .hs-button:before{
+    opacity: 1;
+}
+
+@media (max-width: 500px){
+    .actions{
+        margin-top: 40px;
+    }
+}

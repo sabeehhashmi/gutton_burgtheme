@@ -1,0 +1,66 @@
+/* === Callout === */
+
+.callout{
+    background: no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 48px 0 103px;
+    position: relative;
+    overflow: hidden;
+    &:before{
+        @extend %before;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.75);
+        z-index: 5;
+    }
+    &:after{
+        @extend %before;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -32px;
+        height: 50px;
+        width: calc(100% + 50px);
+        background-color: #D0B768;
+        z-index: 10;
+        transform: rotate(-1deg);
+    }
+}
+.callout-inner{
+    @extend .container;
+}
+.callout-title{
+    color: inherit;
+    margin-bottom: 1.1em;
+}
+.callout-contents{
+    padding-top: 129px;
+    position: relative;
+    z-index: 15;
+    &:before{
+        @extend %before;
+        position: absolute;
+        height: 85px;
+        width: 5px;
+        left: calc(50% - 4px);
+        top: 0;
+        background-color: $color_secondary;
+    }
+    &:after{
+        @extend %after;
+        position: absolute;
+        height: 4px;
+        width: 3px;
+        left: calc(50% - 7px);
+        top: 0;
+        background-color: $color_secondary;
+    }
+}
+.callout-button{
+    @extend .button;
+}

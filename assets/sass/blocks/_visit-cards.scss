@@ -1,0 +1,130 @@
+/* === Visit Cards === */
+
+.visit-cards{
+    margin-top: 110px;
+    margin-bottom: 115px;
+    overflow: hidden;
+    &.style-top-border{
+        border-top: 1px solid #C9C9C9;
+        padding-top: 58px;
+        max-width: 854px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.visit-cards-title{
+    text-align: center;
+    margin-bottom: 1em;
+}
+.visit-card-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -6.5px -13px;
+    justify-content: center;
+}
+.visit-card-item{
+    flex: 0 33.3333%;
+    width: 33.3333%;
+    padding: 0 6.5px;
+    margin-bottom: 13px;
+    max-width: 289px;
+}
+.visit-card{
+    color: #FFF;
+    text-align: center;
+    a{
+        color: $color_secondary;
+    }
+}
+.visit-card-inner{
+    height: 0;
+    padding-bottom: 150%;
+    position: relative;
+    > *{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &:after{
+        display: block;
+        content: '';
+        position: absolute;
+        background-color: $color_secondary;
+        left: 50%;
+        top: 117px;
+        width: 6px;
+        bottom: 130px;
+        z-index: 4;
+        margin-left: -1px;
+    }
+    &:before{
+        display: block;
+        content: '';
+        position: absolute;
+        background-color: $color_secondary;
+        left: 50%;
+        top: 117px;
+        width: 4px;
+        height: 6px;
+        z-index: 4;
+        margin-left: -5px;
+    }
+}
+.visit-card-image{
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1;
+    img{
+        @extend %cover;
+    }
+    &:after{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        content: '';
+        background-color: rgba(37,40,57,0.62);
+    }
+}
+.visit-card-contents{
+    z-index: 2;
+}
+.visit-card-title{
+    font: 300 1.63em/2.12 $font_secondary;
+    letter-spacing: -0.52px;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.visit-card-footer{
+    position: absolute;
+    bottom: 19px;
+    left: 10px;
+    right: 10px;
+    > *{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.visit-card-link{
+    display: inline-block;
+    font-weight: 500;
+    font-family: $font_secondary;
+    text-decoration: none;
+    .visit-card-desc + &{
+        margin-top: 0.63em;
+    }
+}
+.visit-card-desc{
+    line-height: 1.31;
+}

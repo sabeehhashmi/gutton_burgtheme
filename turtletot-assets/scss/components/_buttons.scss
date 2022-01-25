@@ -1,0 +1,8 @@
+button {
+  &:focus {
+    outline: none !important;
+  }
+}
+.btn--lagre {
+  font-weight: 700 !important;
+}

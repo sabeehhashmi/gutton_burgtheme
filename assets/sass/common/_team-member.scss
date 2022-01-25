@@ -1,0 +1,128 @@
+/* === Team Member === */
+.team-member{
+    height: 0;
+    position: relative;
+    padding-bottom: 130.3%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: $color_main;
+    color: #fff;
+}
+.team-member-inner{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.team-member-image{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    img{
+        @extend %cover;
+    }
+    &:after{
+        @extend %after;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+    }
+}
+.team-member-contents{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 23px 27px;
+}
+.team-member-name{
+    color: $color_secondary;
+    font: 1.25em/1.3 $font_secondary;
+}
+.team-member-role{
+    font-size: 0.75em;
+    font-weight: 300;
+    .team-member-name + &{
+        margin-top: 0.58em;
+    }
+}
+
+/* With Bio */
+.team-member.with-bio{
+    .team-member-heading{
+        margin-bottom: 1.25rem;
+    }
+    .team-member-content{
+        max-height: 2.88em;
+        overflow: hidden;
+        margin-bottom: 1.25rem;
+    }
+    .team-member-footer{
+        @extend %flex;
+        justify-content: space-between;
+        border-top: 1px solid #fff;
+        padding: 23px 27px 0;
+        margin: 0 -27px;
+    }
+    .team-member-link{
+        color: $color_secondary;
+        font-family: $font_secondary;
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        &:after{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 0.9em;
+            height: 1em;
+            margin-left: 0.6em;
+            background: url(../img/icon-right-arrow.svg) no-repeat center center;
+            background-size: contain;
+            position: relative;
+            left: 0;
+            @extend %transitions;
+        }
+    }
+    .team-member-linkedin-url{
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../img/icon-linkedin-white.svg) no-repeat center center;
+        background-size: contain;
+        @extend %no_text;
+    }
+}
+
+/* = Team Member Entry = */
+.team-member-entry{
+    .blog-entry-contents{
+        margin-bottom: 0;
+    }
+}
+.team-member-entry-role{
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: $font_secondary;
+    color: #252839;
+    margin-top: 0.9em; 
+}
+.team-member-entry-linkedin-url{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../img/icon-linkedin-black.svg) no-repeat center center;
+    background-size: contain;
+    margin-top: 1.125rem;
+    @extend %no_text;
+}

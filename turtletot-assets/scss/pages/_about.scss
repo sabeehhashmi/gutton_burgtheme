@@ -1,0 +1,42 @@
+.about-top-150 {
+  position: relative;
+  top: 150px;
+}
+.about-card-bg {
+  background-image: url("../images/about-bg.png");
+  background-size: cover;
+  width: 100%;
+  min-height: 350px;
+}
+.about-min-h {
+  p {
+    height: 45px;
+    overflow: hidden;
+  }
+}
+.bg-success-box {
+  background-image: url("../images/bg-success.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.bg-orange-box{
+  background-image: url("../images/orange-box-1.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+.bg-primary-box {
+  background-image: url("../images/bg-primary.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.bg-info-box {
+  background-image: url("../images/bg-info.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.arrow-icon-section {
+  img {
+    max-width: 80%;
+  }
+}

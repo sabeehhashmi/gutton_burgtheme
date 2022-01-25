@@ -1,0 +1,38 @@
+html {
+  font-size: 16px;
+}
+
+// Google Font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import "abstracts/variables";
+// add bootstraps Main Scss
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "abstracts/mixins";
+@import "base/reset";
+@import "base/font";
+@import "base/typography";
+@import "components/buttons";
+@import "components/cards";
+@import "components/carousel";
+@import "components/slider";
+@import "components/wish-list";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/forms";
+@import "layout/footer";
+@import "pages/home";
+@import "pages/about";
+@import "pages/age-group";
+@import "pages/career";
+@import "pages/contact";
+@import "pages/blog";
+
+
+
+
+
+
+
+

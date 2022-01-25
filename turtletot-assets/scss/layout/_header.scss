@@ -1,0 +1,24 @@
+.header-top-list {
+  padding: 0.5rem 0;
+  li {
+    padding: 0 1rem;
+    list-style-type: none;
+    color: #fff;
+    border-left: 0;
+    line-height: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    @media (min-width: 768px) {
+      border-left: 2px solid #fff;
+    }
+    &:first-child {
+      border-left: 0;
+    }
+  }
+  a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 700;
+  }
+}

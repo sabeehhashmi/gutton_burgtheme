@@ -1,0 +1,290 @@
+/* === Tablet === */
+@media (max-width: 900px) {
+    h1{
+        font-size: 2.53rem;
+    }
+    /* Hero */
+    .hero-title{
+        font-size: 2.53rem;
+    }
+    .hero-inner{
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+    
+    /* Layout */
+    .services,
+    .featured-testimonials,
+    .visit-cards,
+    .video-callout-container,
+    .featured-reports,
+    .content,
+    .video,
+    .featured-team,
+    .iconics,
+    .team-members{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .featured-success-story,
+    .angled-hero,
+    .blog-entry-image,
+    .blog-entry-contents,
+    .blog-entry,
+    .related-posts-header{
+        margin-bottom: 60px;
+    }
+    .featured-success-stories,
+    .angled-hero-inner{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .content-text-container{
+        padding-top: 60px;
+    }
+    .blog-entry,
+    .featured-success-stories-inner,
+    .featured-success-stories.bg-none .featured-success-stories-inner{
+        padding-bottom: 60px;
+    }
+    
+    
+    /* Typography */
+    .featured-success-story-title, .testimonial-item-title, h2{
+        font-size: 1.93rem;
+    }
+    
+    /* Featured Success Stories & Featured Testimonials */
+    .video-callout-container + div[class="container"] + .featured-success-stories{
+        padding-top: 210px;
+    }
+    .featured-success-story-side,
+    .featured-testimonials-side{
+        flex: 0 45%;
+        width: 45%;
+    }
+    .featured-success-story-main,
+    .featured-testimonials-main,
+    .testimonial-side + .testimonial-main{
+        padding-left: 40px;
+    }
+    .success-story-item-title{
+        font-size: 1rem;
+    }
+    .featured-testimonials-main{
+        width: 55%;
+    }
+    .featured-success-stories-slider,
+    .featured-success-stories-heading,
+    .featured-success-stories-footer{
+        display: block;
+    }
+    .featured-success-stories-inner > .success-story-items,
+    .featured-success-story{
+        display: none;
+    }
+    .featured-success-stories-slider{
+        height: auto;
+        overflow: visible;
+        visibility: visible;
+    }
+    .success-story-item-image{
+        display: block;
+    }
+    .featured-success-stories-title{
+        float: none;
+        font-size: 0.93rem;
+        margin-bottom: 1.71em;
+    }
+    .featured-success-stories-archive-link{
+        float: none;
+        font-size: 1.07rem;
+    }
+    .featured-testimonials-title{
+        float: left;
+    }
+    .featured-testimonials-archive-link{
+        float: right;
+    }
+    
+    /* Partners */
+    .partners-title{
+        flex: 0 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    
+    /* Video Callout */
+    .video-callout-inner{
+        &:before{
+            left: 50px;
+        }
+        &:after{
+            left: 46px;
+        }
+    }
+    .video-callout-container{
+        padding-bottom: 0;
+    }
+    .video-callout-media{
+        flex: 0 100%;
+        width: 100%;
+    }
+    .video-callout-media-inner{
+        height: 0;
+        padding-bottom: 60%;
+        min-height: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .video-callout-contents{
+        padding: 60px 30px 30px;
+    }
+    
+    /* Featured Reports */
+    .featured-reports{
+        > .featured-reports-archive-link-container{
+            display: block;
+            margin: 30px 0 0;
+            font-size: 1rem;
+        }
+    }
+    .featured-reports-header{
+        .featured-reports-archive-link-container{
+            display: none;
+        }
+    }
+    
+    /* Report */
+    .report{
+        padding: 40px 40px 50px;
+    }
+    .report-image{
+        margin-right: 40px;
+        width: 150px;
+        flex: 0 150px;
+    }
+    .report-contents{
+        padding-top: 0;
+    }
+    
+    /* Callout */
+    .callout-title{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    /* Footer */
+    .footer{
+        margin-top: 90px;
+    }
+    .footer-logo{
+        margin-right: 20px;
+    }
+    .footer-navs{
+        flex-wrap: wrap;
+    }
+    .footer-nav{
+        flex: 0 50%;
+        margin-bottom: 30px;
+    }
+    
+    /* Angled Hero */
+    .angled-hero{
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+    }
+    
+    /* Featured Team */
+    .featured-team-header{
+        padding-left: 0;
+        &:before{
+            content: none;
+        }
+    }
+    .featured-team-heading{
+        margin-bottom: 30px;
+    }
+    
+    /* Iconics */
+    .iconics-items{
+        margin: 0 -15px 30px;
+    }
+    .iconics-item{
+        flex: 0 50%;
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+    .iconics-header{
+        margin-bottom: 30px;
+    }
+    
+    /* Page Header */
+    .page-header{
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+    
+    /* Blog Item */
+    .loop-item-media{
+        margin-right: 40px;
+    }
+    .loop-item-image{
+        padding-bottom: 60%;
+    }
+    
+    /* Tabs */
+    .tabs-container{
+        display: block;
+    }
+    .tab-titles{
+        margin-bottom: 30px;
+        padding: 0;
+        li{
+            display: inline-block;
+        }
+    }
+    .tabs-header{
+        &:before{
+            content: none;
+        }
+        padding-left: 0;
+    }
+    .tab-content-text{
+        font-size: 2em;
+    }
+    .tabs-section.style-white-skewed{
+        margin-top: 150px;
+        margin-bottom: 100px;
+        .tabs-section-bg{
+            top: -100px;
+            bottom: -100px;
+        }
+    }
+    
+    /* Team Member */
+    .team-member-item{
+        flex: 0 50%;
+        width: 50%;
+    }
+}
+@media (max-width: 782px) {
+    .admin-bar{
+        .header{
+            top: 46px;
+        }
+        .menus{
+            top: 141px;
+        }
+    }
+}

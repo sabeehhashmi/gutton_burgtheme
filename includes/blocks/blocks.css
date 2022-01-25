@@ -1,0 +1,52 @@
+/* ===== BikeTest | GutenBerg ===== */
+.editor-styles-wrapper .turtletot-block-title{
+    color: #0073aa;
+    font-size: 20px;
+    border-top: 1px solid;
+    padding-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+/* Block | Image Upload */
+.turtletot-image-preview{
+    width: 112px;
+    height: 112px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #7e8993;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.turtletot-image-preview:empty{
+    display: none;
+}
+.turtletot-image-preview img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Block | Layout */
+.turtletot-container{
+    overflow: hidden;
+}
+.turtletot-row{
+    display: flex;
+    margin-left: -10px;
+    margin-right: -9px;
+}
+.turtletot-col-auto,
+.turtletot-col{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.turtletot-col-auto{
+    flex: 0;
+}
+.turtletot-col{
+    flex: 1;
+}

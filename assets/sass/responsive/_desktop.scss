@@ -1,0 +1,170 @@
+/* === Desktop === */
+
+@media (max-width: 1105px) {
+    body{
+        padding-top: 95px;
+    }
+    html{
+        font-size: 15px;
+    }
+    .container,
+    .tabs{
+        max-width: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .featured-success-stories,
+    .loop-header{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .header-inner{
+        min-height: 95px;
+    }
+    .nav-active{
+        height: 0;
+        overflow: hidden;
+        .menus, .submenu-toggle{
+            display: block;
+        }
+    }
+    .header{
+        padding: 0 33px;
+        position: fixed;
+        top: 0;
+        .admin-bar &{
+            top: 32px;
+        }
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .menus{
+        display: none;
+        position: fixed;
+        top: 95px;
+        .admin-bar &{
+            top: 127px;
+        }
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background: $color_main;
+        overflow: auto;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .main-nav{
+        > ul{
+            display: block;
+            > li{
+                > a{
+                    padding: 34px 97px 34px 32px;
+                    background-color: #171A2B;
+                    font-size: 22px;
+                    color: $color_secondary;
+                    &:after{
+                        content: none;
+                    }
+                }
+                border-bottom: 1px solid #fff;
+                &:first-child{
+                    border-top: 1px solid #fff;
+                }
+                position: relative;
+                > .sub-menu-container{
+                    display: block;
+                    position: static;
+                    opacity: 1;
+                    border: 0;
+                    min-width: 0;
+                    > .sub-menu{
+                        display: none;
+                    }
+                    > ul{
+                        display: block;
+                        width: auto;
+                        border: none;
+                        > li{
+                            > a{
+                                font-size: 1rem;
+                                padding: 18px 97px 18px 32px;
+                                border-bottom: 0;
+                                border-top: 1px solid #fff;
+                                &:after{
+                                    right: 42px;
+                                    background-image: url(../img/icon-right-arrow.svg);
+                                    top: calc(50% - 6.5px);
+                                    width: 13px;
+                                    height: 13px;
+                                }
+                            }
+                            &:hover, &:focus, &.active{
+                                > a{
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.closed{
+                    .submenu-toggle:before{
+                        transform: rotate(0deg); 
+                    }
+                    > .sub-menu-container{
+                        display: none;
+                    }
+                }
+                &.menu-item-has-children{
+                    &:hover, &:focus{
+                        > .sub-menu-container{
+                            display: block;
+                            animation: none;
+                        }
+                    }
+                    &.closed{
+                        &:hover, &:focus{
+                            > .sub-menu-container{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-button{
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+        display: block;
+        text-align: left;
+        font-size: 22px;
+        padding: 19.5px 97px 19.5px 32px;
+        position: relative;
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            right: 42px;
+            background: url(../img/icon-right-arrow-black.svg) no-repeat center center;
+            background-size: contain;
+            top: calc(50% - 6.5px);
+            width: 13px;
+            height: 13px;
+        }
+    }
+    
+    /* Featured Team */
+    .featured-team-header{
+        padding-left: 220px;
+        &:before{
+            width: 180px;
+        }
+    }
+}

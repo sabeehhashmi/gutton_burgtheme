@@ -1,0 +1,27 @@
+/* === Admin === */
+.ogr-upload{
+    width: 130px;
+}
+.ogr-upload-preview{
+    height: 0;
+    padding-bottom: 100%;
+    margin-bottom: 15px;
+    border: 1px dashed #ccc;
+    position: relative;
+}
+.ogr-upload-preview img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+.ogr-upload-button{
+    width: 100%;
+}
+
+.ogr-menu-upload-container{
+    float: left;
+}
